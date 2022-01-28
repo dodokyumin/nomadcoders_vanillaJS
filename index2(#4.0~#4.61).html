@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Momentum App</title>
+</head>
+<body>
+  <form class="hidden" id="login-form">
+    <input 
+      required 
+      maxlength="15"
+      type="text"
+      placeholder="what is your name?"
+    />
+    <!--HTML의 form과 input기능을 사용하여 JS를 간단히.
+          required : 이 input을 필수입력 항목으로 만들어준다.
+          maxlength : 최대 글자수 조절.
+        input의 이러한 기능들을 작동시키기 위해서는 input이 <form> 안에 있어야 한다.
+        버튼을 누르거나 엔터를 하면 form이 submit 되어 페이지가 새로고침이 된다. 새로고침을 막고 form이 저장된 채로 있게 만들어야한다.
+    -->
+    <button>Log In</button>
+  </form>
+  <h1 id="greeting" class="hidden"></h1>
+  <script src="app.js"></script>
+</body>
+</html>

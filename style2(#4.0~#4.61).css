@@ -1,0 +1,4 @@
+.hidden {
+  display: none;
+}
+/** 어떤 요소에게든 이 classname을 주면, 그 요소를 숨긴다.
