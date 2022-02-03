@@ -11,6 +11,7 @@ console.log(bgImage); //요소에서 찾을 수 없지만 콘솔에는 보인다
 bgImage.src = `img/${chosenImage}`;
 console.log(bgImage); // 오른클릭 '요소 패널에서 보기' => 찾을 수 없음. document에 존재하지 않고 JS에만 있기 때문.
 
-//그래서 마지막으로 bgImage를 (document의)body내부에 추가한다.
+//그래서 마지막으로 bgImage를 (document의)body내부에 추가한다.(html에서 src=""에 해당하는 부분)
 document.body.appendChild(bgImage);
-//append 덫붙이다,추가하다.
+//append 덫붙이다,추가하다. 가장 뒤에.
+//prepend 가장 위에 추가하기.
