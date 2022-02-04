@@ -33,7 +33,7 @@ function handleToDoSubmit(event) {
   toDoInput.value = "";
   toDos.push(newTodo);
   paintTodo(newTodo);
-  saveToDos(newTodo);
+  saveToDos();
 }
 toDoForm.addEventListener("submit", handleToDoSubmit);
 
@@ -56,3 +56,4 @@ if (savedToDos) {
 //forEach를 사용할 때. function(sayHello)을 추가로 만들 필요 없이
 // parsedToDos.forEach((item) => console.log("this is the turn of", item)); 이렇게 shortcut 가능.
 // => called "arrow function"
+
