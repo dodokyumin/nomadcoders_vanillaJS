@@ -31,6 +31,6 @@ function handleToDoSubmit(event) {
   toDoInput.value = "";
   toDos.push(newTodo); //newTodo를 그리기 전에, toDos array에 newTodo를 push(저장)한다.
   paintTodo(newTodo);
-  saveToDos(newTodo); //newTodo를 localStrage에 저장.(하지만 a,b,c,d 이렇게 하나의 텍스트로 저장됨. localStorage는 텍스트만 저장하기 때문) 여기서 사용할 브라우저의 기능이 바로 JASON.stringify
+  saveToDos(); //toDos array를 localStrage에 저장.(하지만 a,b,c,d 이렇게 하나의 텍스트로 저장됨. localStorage는 텍스트만 저장하기 때문) 여기서 사용할 브라우저의 기능이 바로 JASON.stringify
 }
 toDoForm.addEventListener("submit", handleToDoSubmit);
