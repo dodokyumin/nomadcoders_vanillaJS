@@ -16,6 +16,7 @@ function saveToDos() {
 
 function deleteTodo(event) {
   const li = event.target.parentElement;
+  console.log(li.id);//우리가 X버튼을 눌렀을 때, 해당 버튼의 li(부모태그)의 고유 id를 console창에서 확인. 즉 무엇을 지우려 하는지 특정 타겟을 알 수 있음
   li.remove();
 }
 
